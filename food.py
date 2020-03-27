@@ -9,7 +9,7 @@ class Food:
         self.Y = Y
         self.MOVE_FACTOR_X = moveFactor
         self.MOVE_FACTOR_Y = moveFactor
-        self.image = pygame.image.load(os.path.join(imagename))
+        self.image = pygame.image.load(os.path.join("./resources/" + imagename))
         self.image = pygame.transform.scale(self.image, (size, size))
     
     def draw(self, screen):
